@@ -28,7 +28,7 @@ nav {
 /*classi per il comportamento della navbar durante lo scroll*/
 .scroll-nav {
   background-color: white;
-  animation: fade-in 600ms;
+  animation: fade-in 500ms;
 }
 
 .green-btn {
@@ -38,18 +38,24 @@ nav {
   border-radius: 50px;
   animation: fade-in 400ms;
 }
-
+/*animazione fade in per la nav e il suo bottone*/
 @keyframes fade-in {
   from {
-    opacity: 0;
+    opacity: 0.1;
   }
-  25% {
-    opacity: 0.3;
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
   }
   50% {
+    opacity: 0.5;
+  }
+  60% {
     opacity: 0.6;
   }
-  75% {
+  80% {
     opacity: 0.8;
   }
   to {
@@ -252,6 +258,9 @@ main {
   position: absolute;
   right: 0;
 }
+.hidden-star {
+  display: none;
+}
 
 .footer {
   padding: 2rem 6rem;
@@ -290,4 +299,75 @@ main {
 .about ul li a {
   color: #757472;
   text-decoration: none;
+}
+
+/* layout tablet */
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  nav {
+    padding-inline: 3rem;
+  }
+
+  .trending,
+  .footer {
+    padding-inline: 3rem;
+  }
+
+  .hero {
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 3rem;
+  }
+
+  .hero img {
+    width: 50%;
+    /* object-fit: contain; */
+  }
+
+  .hero-page {
+    width: 60%;
+  }
+  .trending-card {
+    width: 50%;
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  .post-section {
+    padding-inline: 3rem;
+  }
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .post-content {
+    width: 80%;
+  }
+
+  .hidden-star {
+    display: initial;
+  }
+
+  .main-and-footer {
+    flex-direction: column;
+  }
+  .footer {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .other-link,
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+  .about ul {
+    flex-wrap: nowrap;
+  }
+}
+
+/* layout mobile  */
+@media screen and (max-width: 575px) {
 }

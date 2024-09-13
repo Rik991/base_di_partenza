@@ -1,7 +1,7 @@
 const navBar = document.querySelector("nav");
 const greenBtn = document.querySelector(".black-btn");
 
-const scrollDown = 400;
+const scrollDown = 450;
 
 const colorNav = () => {
   if (window.scrollY >= scrollDown) {
