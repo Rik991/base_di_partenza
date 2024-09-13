@@ -442,14 +442,14 @@ main {
     width: 180px;
   }
   .post-section {
-    width: 100%;
+    max-width: 94%;
     padding-left: 1rem;
   }
   .post-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 100%;
+    max-width: 94%;
   }
   .post-content {
     display: flex;
