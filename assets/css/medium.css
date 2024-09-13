@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*colori da usare: giallo: ffc017, verde : #1a8917, nero: #191919*/
+
+header {
+  background-color: #ffc017;
+  border-bottom: 2px solid #191919;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #191919;
+  padding: 2rem 6rem;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-inline: 1rem;
+  cursor: pointer;
+}
+
+.black-btn {
+  background-color: #191919;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+.hero {
+  padding-block: 2rem;
+  padding-left: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-page {
+  width: 34%;
+  padding-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.hero-page a {
+  text-decoration: none;
+  padding-inline: 2rem;
+}
+
+.trending {
+  padding: 3rem 6rem;
+  border-bottom: 2px solid #19191977;
+}
+
+.trending-title {
+  display: flex;
+  align-items: center;
+}
+.trending-title img {
+  margin-right: 1rem;
+}
+
+.trending-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trending-card {
+  width: 33%;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.card-number {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e5e6e6;
+}
+
+.info-user {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.info-card {
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.info-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+.info-card p {
+  font-family: "Spectral", serif;
+  color: #757472;
+}
+
+.circle-logo {
+  border: 1px solid rgba(85, 85, 85, 0.24);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.square-logo {
+  border-radius: 20%;
+  margin-right: 1rem;
+}
+
+.info-star {
+  display: flex;
+  align-items: center;
+}
+
+.info-star p {
+  margin-right: 5px;
+}
+
+.post-section {
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 1rem;
+  width: 40%;
+}
+
+.post-content {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.post-photo {
+  width: 220px;
+}
+
+.info-post {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.post h4 {
+  color: #757472;
+  margin-block: 0.5rem;
+}
+
+.post h2 {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.info-post span {
+  background-color: #f1f2f2;
+  border-radius: 20px;
+  padding: 0.1rem 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.info-post p {
+  font-family: "Spectral", serif;
+  color: #757472;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+}
