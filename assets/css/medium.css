@@ -28,6 +28,7 @@ nav {
 /*classi per il comportamento della navbar durante lo scroll*/
 .scroll-nav {
   background-color: white;
+  animation: fade-in 600ms;
 }
 
 .green-btn {
@@ -35,6 +36,25 @@ nav {
   color: white;
   padding: 0.5rem;
   border-radius: 50px;
+  animation: fade-in 400ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 h1 {
