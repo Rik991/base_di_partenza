@@ -13,12 +13,28 @@ header {
 }
 
 nav {
+  background-color: #ffc017;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #191919;
-  padding: 2rem 6rem;
+  padding: 1rem 6rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+/*classi per il comportamento della navbar durante lo scroll*/
+.scroll-nav {
+  background-color: white;
+}
+
+.green-btn {
+  background-color: #1a8917;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50px;
 }
 
 h1 {
@@ -60,7 +76,7 @@ h6 {
 }
 
 .hero {
-  padding-block: 2rem;
+  padding-block: 0.5rem;
   padding-left: 6rem;
   display: flex;
   justify-content: space-between;
@@ -79,6 +95,9 @@ h6 {
 .hero-page a {
   text-decoration: none;
   padding-inline: 2rem;
+}
+main {
+  position: relative;
 }
 
 .trending {
@@ -157,7 +176,9 @@ h6 {
 }
 
 .post-section {
-  padding: 3rem 6rem;
+  width: 100%;
+  padding-block: 3rem;
+  padding-left: 6rem;
   display: flex;
   justify-content: space-between;
 }
@@ -167,7 +188,7 @@ h6 {
   flex-direction: column;
   align-items: start;
   margin-right: 1rem;
-  width: 40%;
+  width: 100%;
 }
 
 .post-content {
@@ -210,4 +231,43 @@ h6 {
 .bookmark {
   position: absolute;
   right: 0;
+}
+
+.footer {
+  padding: 2rem 6rem;
+}
+
+.main-and-footer {
+  display: flex;
+  justify-content: start;
+}
+
+.other-link {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 1rem;
+  border-bottom: 2px solid #19191977;
+  padding-bottom: 2rem;
+}
+
+.other-link p {
+  border: 1px solid rgba(85, 85, 85, 0.24);
+  padding: 0.6rem 1rem;
+  color: #757472;
+  cursor: pointer;
+}
+
+.about ul {
+  width: 75%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about ul li a {
+  color: #757472;
+  text-decoration: none;
 }
