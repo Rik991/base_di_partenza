@@ -303,24 +303,38 @@ main {
 
 /* layout tablet */
 @media screen and (min-width: 576px) and (max-width: 1199px) {
-  nav {
-    padding-inline: 3rem;
+  h1 {
+    font-size: 4rem;
   }
 
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 0.7rem;
+  }
+
+  nav {
+    padding-inline: 2rem;
+    max-width: 100%;
+  }
+  .menu ul li {
+    margin-right: 0.5rem;
+  }
   .trending,
   .footer {
-    padding-inline: 3rem;
+    padding-inline: 2rem;
   }
 
   .hero {
     justify-content: space-between;
     overflow: hidden;
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
 
   .hero img {
     width: 50%;
-    /* object-fit: contain; */
   }
 
   .hero-page {
@@ -333,12 +347,14 @@ main {
   }
 
   .post-section {
-    padding-inline: 3rem;
+    width: 100%;
+    padding-left: 2rem;
   }
   .post-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 100%;
   }
   .post-content {
     width: 80%;
@@ -363,6 +379,13 @@ main {
     display: flex;
     justify-content: start;
   }
+  .post-photo {
+    width: 150px;
+  }
+  .other-link h4 {
+    font-size: 0.5rem;
+  }
+
   .about ul {
     flex-wrap: nowrap;
   }
@@ -370,4 +393,94 @@ main {
 
 /* layout mobile  */
 @media screen and (max-width: 575px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 0.6rem;
+  }
+
+  nav {
+    padding-inline: 1rem;
+  }
+
+  .menu ul li:nth-child(-n + 3) {
+    display: none;
+  }
+
+  .trending,
+  .footer {
+    padding-inline: 1rem;
+  }
+  .hero {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .hero img {
+    display: none;
+  }
+
+  .hero-page {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .hero-page h2 {
+    margin-block: 2rem;
+  }
+  .trending-card {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+  }
+  .post-photo {
+    width: 180px;
+  }
+  .post-section {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  .post-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .hidden-star {
+    display: initial;
+  }
+
+  .main-and-footer {
+    flex-direction: column;
+  }
+  .footer {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .other-link,
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+  .post h4 {
+    font-size: 0.9rem;
+  }
+
+  .post p {
+    font-size: 0.5rem;
+  }
 }
